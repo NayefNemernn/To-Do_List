@@ -38,18 +38,24 @@
             <div class="task-header">
                 <div class="task-header-title">My Tasks</div>
             </div>
+            <form class="task-form">
+                <input type="text" id="task-input" placeholder="New task" required>
+                <input type="datetime-local" id="task-date" required>
+                <input type="text" id="task-person" placeholder="Assign to" required>
+                <button type="submit">+</button>
+            </form>
             <div class="task-body">
-                <div class="to-do">
-                    <h3>To-Do</h3>
-                    <div class="add-task">
-                        <input type="text" placeholder="Add Task...">
-                    </div>
+                <div class="list" id="pending-tasks">
+                    <h3>Pending</h3>
+                    <div class="task-container"></div>
                 </div>
-                <div class="in-progress">
-                    <h3>In Progress</h3>
+                <div class="list" id="completed-tasks">
+                    <h3>Completed</h3>
+                    <div class="task-container"></div>
                 </div>
-                <div class="done">
-                    <h3>Done</h3>
+                <div class="list" id="past-due-tasks">
+                    <h3>Past Due</h3>
+                    <div class="task-container"></div>
                 </div>
             </div>
             
